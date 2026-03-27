@@ -1,0 +1,147 @@
+.tasks-page { }
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tasks-header h1 {
+  font-size: 1.8rem;
+  color: #ccd6f6;
+  margin: 0;
+}
+
+.btn-new-task {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-new-task:hover { background: #c73652; }
+
+/* Formulaire */
+.task-form {
+  background: #1a1a2e;
+  border: 1px solid #e94560;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.task-form h3 {
+  margin: 0;
+  color: #e94560;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.task-form input,
+.task-form select,
+.task-form textarea {
+  background: #0f0f23;
+  border: 1px solid #2d2d4e;
+  color: #ccd6f6;
+  padding: 0.6rem 0.9rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.task-form input:focus,
+.task-form select:focus,
+.task-form textarea:focus {
+  border-color: #e94560;
+}
+
+.form-row input { flex: 1; }
+
+.task-form textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.btn-create {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.btn-create:hover { background: #c73652; }
+
+/* Filtres */
+.filters {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  background: #1a1a2e;
+  color: #a8b2d8;
+  border: 1px solid #2d2d4e;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s;
+}
+
+.filter-btn.active {
+  background: #e94560;
+  color: white;
+  border-color: #e94560;
+}
+
+.filter-count {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 0.75rem;
+}
+
+.alert-error {
+  background: rgba(233, 69, 96, 0.15);
+  border: 1px solid #e94560;
+  color: #fc8181;
+  padding: 0.8rem;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.empty-tasks {
+  text-align: center;
+  padding: 3rem;
+  color: #4a5568;
+}
+
+.loading-text {
+  text-align: center;
+  color: #4a5568;
+  padding: 2rem;
+}
