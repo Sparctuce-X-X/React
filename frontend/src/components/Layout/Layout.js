@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer className="footer">
-        <p>© 2024 TaskManager — TP React</p>
+        <p>© {new Date().getFullYear()} TaskManager — TP React</p>
       </footer>
     </div>
   );
